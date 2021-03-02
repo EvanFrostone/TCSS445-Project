@@ -44,7 +44,7 @@
         <div class = "container">
             <div class = "jumbotron">
                 <h2 class = "display">Login to your Testing Account</h2>
-                <form method = "GET" action =>
+                <form method = "GET" action = "post">
                     <div class = "form-group">
                         <label for "emailaddress">Email Address</label>
                         <input type = "email" class = "form-control" id = "emailaddress" placeholder="Enter you Email">
