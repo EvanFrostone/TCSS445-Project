@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.php">Pierce County Covid Testing</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,13 +20,13 @@
 
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../web-files/index.php">Home
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.php">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="employee.php">Employee</a>
+                        <a class="nav-link" href="employee.php">Testing Locations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="department.php">Department</a>
@@ -36,7 +36,9 @@
                     </li>
                 </ul>
                 <form action = "../web-files/login.php"class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Login</button>
+                    <div class = "form-group">
+                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Login</button>
+                    </div>
                 </form>
             </div>
         </nav>
@@ -48,11 +50,19 @@
                     <div class = "form-group">
                         <label for "emailaddress">Email Address</label>
                         <input type = "email" class = "form-control" id = "emailaddress" placeholder="Enter you Email">
+                    </div>
+
+                    <div class = "form-group">
                         <label for "password">Password</label>
                         <input type = "password" class = "form-control" id = "password" placeholder = "Enter your Password">
                     </div>
-                    <button type = "submit" class = "btn btn-success">Login</button>
-                    <p><a href = "../web-files/forogt-password.php">Forgot your password?</a></p>
+
+                    <div class = "form-group">
+                        <button type = "submit" class = "btn btn-success">Login</button>
+                    </div>
+                </form>
+                <p><a href = "../web-files/forogt-password.php">Forgot your password?</a></p>
+                <p><a href = "../web-files/signupLanding.php">Don't have an account? Click here to make one.</a></p>
             </div>
         </div>
         

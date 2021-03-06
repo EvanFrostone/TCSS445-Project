@@ -26,7 +26,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="employee.php">Employee</a>
+                        <a class="nav-link" href="employee.php">Testing Locations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="department.php">Department</a>

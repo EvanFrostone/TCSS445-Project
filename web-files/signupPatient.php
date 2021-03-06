@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.php">Pierce County Covid Testing</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,13 +20,13 @@
 
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../web-files/index.php">Home
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.php">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="employee.php">Employee</a>
+                        <a class="nav-link" href="employee.php">Testing Locations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="department.php">Department</a>
@@ -122,6 +122,10 @@
                         </select>
                     </div>
 
+                    <div class = "form-group">
+                        <label for = "zip-code">Zip Code</label>
+                        <input type = "text" class = "form-control" id = "zip-code" placeholder = "Enter your Zip Code">
+                    </div>
                     <div class = "form-group">	
                         <label for "emailaddress">Email Address</label>
                         <input type = "email" class = "form-control" id = "emailaddress" placeholder="Enter your Email...">
@@ -131,7 +135,7 @@
                         <label for "phonenumber">Phone Number</label>
                         <input type = "phonenumber" class = "form-control" id ="phonenumber" placeholder= "Enter your Phone Number...">
                     </div>
-                    
+
                     <div class = "form-group">
                         <label for "password">Password</label>
                         <input type = "password" class = "form-control" id = "password" placeholder = "Enter your Password...">
@@ -144,13 +148,31 @@
 
                     <div class = "form-group">
                         <label for = "sec-q-one">Security Question One:</label>
-                        <select class = "form-control" id = "secqone">
+                        <select class = "form-control" id = "sec-q-one">
                             <option value = "mother-maiden">What is your mother's maiden name?</option>
                             <option value = "second-grade">What school did you go to for second grade?</option>
                             <option value = "first-car-color">What color was your first car?</option>
                         </select>
                     </div>
 
+                    <div class = "form-group">
+                        <label for = "sec-a-one">Security Answer One</label>
+                        <input type = "text" class = "form-control" id = "sec-a-one" placeholder = "Enter Answer">
+                    </div>
+
+                    <div class = "form-group">
+                        <label for = "sec-q-two">Security Question Two:</label>
+                        <select class = "form-control" id = "sec-q-two">
+                            <option value = "city-of-birth">What city were your born in?</option>
+                            <option value = "make-first-car">What was the make of your first car? (What brand?)</option>
+                            <option value = "father-birth-year">What year was your father born?</option>
+                        </select>
+                    </div>
+
+                    <div class = "form-group">
+                        <label for = "sec-a-two">Security Answer Two</label>
+                        <input type = "text" class = "form-control" id = "sec-a-two" placeholder = "Enter Answer">
+                    </div>
                     <div class = "form-group">
                         <button type = "submit" class = "btn btn-success">Login</button>
                         <p><a href = "../web-files/forogt-password.php">Forgot your password?</a></p>
