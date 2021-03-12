@@ -6,7 +6,8 @@
         <link rel = "stylesheet" href = "https://bootswatch.com/4/sandstone/bootstrap.min.css">
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+        <script src = "../resources/popper.min.js"></script>
+        <script src = "../resources/jquery-3.6.0.min.js"></script>
         <title>Pierce County COVID-19 Testing</title> 
 
     </head>
@@ -180,11 +181,13 @@
                         <input type = "text" class = "form-control" id = "sec-a-two" placeholder = "Enter Answer">
                     </div>
                     <div class = "form-group">
-                        <button type = "submit" class = "btn btn-success">Login</button>
+                        <button type = "submit" class = "btn btn-success">Sign Uo</button>
                         <p><a href = "../web-files/forogt-password.php">Forgot your password?</a></p>
                     </div>
             </div>
         </div>
         
     </body>
+
+    <script src = "doctorSignup.js"></script>
 </html>
