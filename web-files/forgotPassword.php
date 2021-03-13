@@ -6,14 +6,13 @@
         <link rel = "stylesheet" href = "https://bootswatch.com/4/sandstone/bootstrap.min.css">
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-        <script src = "../resources/popper.min.js"></script>
-        <script src = "../resources/jquery-3.6.0.min.js"></script>
+
         <title>Pierce County COVID-19 Testing</title> 
 
     </head>
 
     <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.php">Pierce County Covid Testing</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,35 +36,21 @@
                     </li>
                 </ul>
                 <form action = "../web-files/login.php"class="form-inline my-2 my-lg-0">
-                    <div class = "form-group">
-                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Login</button>
-                    </div>
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Login</button>
                 </form>
             </div>
         </nav>
 
         <div class = "container">
             <div class = "jumbotron">
-                <h2 class = "display">Login to your Testing Account</h2>
-                <form method = "GET" action = "post">
-                    <div class = "form-group">
-                        <label for "emailaddress">Email Address</label>
-                        <input type = "email" class = "form-control" id = "emailaddress" placeholder="Enter you Email">
-                    </div>
-
-                    <div class = "form-group">
-                        <label for "password">Password</label>
-                        <input type = "password" class = "form-control" id = "password" placeholder = "Enter your Password">
-                    </div>
-
-                    <div class = "form-group">
-                        <button type = "submit" class = "btn btn-success">Login</button>
-                    </div>
-                </form>
-                <p><a href = "../web-files/forgotPassword.php">Forgot your password?</a></p>
-                <p><a href = "../web-files/signupLanding.php">Don't have an account? Click here to make one.</a></p>
+                <h2 class= display>Forgot your password?</h2>
+                    <form class = "needs-validation">
+                        <div class = "mb-3">   
+                            <label for = "email">Enter your email address:</label>
+                            
+                        </div>
+                    </form>
+            
             </div>
         </div>
-        
     </body>
-</html>

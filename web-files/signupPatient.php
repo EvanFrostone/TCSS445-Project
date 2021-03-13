@@ -21,7 +21,7 @@
 
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.php">Home
                             <span class="sr-only">(current)</span>
                         </a>
@@ -45,28 +45,28 @@
         <div class = "container">
             <div class = "jumbotron">
                 <h2 class = "display">Sign Up For Your Testing Account</h2>
-                <form method = "GET" action = "post">
-                    <div class = "form-group">
+                <form class ="needs-validation" method = "GET" action = "post" onsubmit="return checkPassword(this)">
+                    <div class = "mb-3">
                         <label for "firstname">First Name</label>
-                        <input type = "text" class = "form-control" id = "firstname" placeholder= "Enter your First Name...">
+                        <input type = "text" class = "form-control" id = "firstname" placeholder= "Enter your First Name..." required>
                     </div>
 
-                    <div class = "form-group">
+                    <div class = "mb-3">
                         <label for "lastname">Last Name</label>
-                        <input type = "text" class = "form-control" id = "lastname" placeholder = "Enter your Last Name...">
+                        <input type = "text" class = "form-control" id = "lastname" placeholder = "Enter your Last Name..." required>
                     </div>
 
-                    <div class = "form-group">
+                    <div class = "mb-3">
                         <label for "streetaddress">Street Address</label>
-                        <input type "text" class = "form-control" id = "streetaddress" placeholder = "Enter your Address...">
+                        <input type "text" class = "form-control" id = "streetaddress" placeholder = "Enter your Address..." required>
                     </div>
 
-                    <div class = "form-group">
+                    <div class = "mb-3">
                         <label type for "city">City</label>
-                        <input type = "text" class = "form-control" id = "city" placeholder = "Enter your City...">
+                        <input type = "text" class = "form-control" id = "city" placeholder = "Enter your City..." required>
                     </div>
 
-                    <div class = "form-group">
+                    <div class = "mb-3">
                         <label for "state">State</label>
                         <select class = "form-control" id = "state">
                             <option value="AL">Alabama</option>
@@ -123,31 +123,35 @@
                         </select>
                     </div>
 
-                    <div class = "form-group">
+                    <div class = "mb-3">
                         <label for = "zip-code">Zip Code</label>
-                        <input type = "text" class = "form-control" id = "zip-code" placeholder = "Enter your Zip Code">
+                        <input type = "text" class = "form-control" id = "zip-code" placeholder = "Enter your Zip Code" required>
                     </div>
-                    <div class = "form-group">	
+
+                    <div class = "mb-3">	
                         <label for "emailaddress">Email Address</label>
-                        <input type = "email" class = "form-control" id = "emailaddress" placeholder="Enter your Email...">
+                        <input type = "email" class = "form-control" id = "emailaddress" placeholder="Enter your Email..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     </div>
 
-                    <div class = "form-group">
+                    <div class = "mb-3">
                         <label for "phonenumber">Phone Number</label>
-                        <input type = "phonenumber" class = "form-control" id ="phonenumber" placeholder= "Enter your Phone Number...">
+                        <input type = "phonenumber" class = "form-control" id ="phonenumber" placeholder= "Enter your Phone Number..." pattern = "(\d){10}" required>
+                        <div class = "form-text">Please enter your 10 digit phone number with no special characters (-,?,(,),/,etc..).</div>
                     </div>
 
-                    <div class = "form-group">
-                        <label for "password">Password</label>
-                        <input type = "password" class = "form-control" id = "password" placeholder = "Enter your Password...">
+                    <div class = "mb-3">
+                        <label for = "password">Password</label>
+                        <input type = "password" class = "form-control"  name = "pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id = "password" placeholder = "Enter your Password..." required>
+                        <div class = "form-text">Your password must contain at least a characters, a lower and uppercase letter, a number, and a special character.</div>
                     </div>
 
-                    <div class = "form-group">
-                        <label for = "confirmpassword">Password</label>
-                        <input type = "password" class = "form-control" id = "password-confirm" placeholder ="Please re-enter your Password...">
+                    <div class = "mb-3">
+                        <label for = "confirmpassword">Confirm Your Password</label>
+                        <input type = "password" class = "form-control" name  = "passcon" id = "password-confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,} placeholder ="Please re-enter your Password..." required>
+                        <div class = "form-text">Your passwords must match.</div>
                     </div>
 
-                    <div class = "form-group">
+                    <div class = "mb-3">
                         <label for = "sec-q-one">Security Question One:</label>
                         <select class = "form-control" id = "sec-q-one">
                             <option value = "mother-maiden">What is your mother's maiden name?</option>
@@ -156,12 +160,12 @@
                         </select>
                     </div>
 
-                    <div class = "form-group">
+                    <div class = "mb-3">
                         <label for = "sec-a-one">Security Answer One</label>
-                        <input type = "text" class = "form-control" id = "sec-a-one" placeholder = "Enter Answer">
+                        <input type = "text" class = "form-control" id = "sec-a-one" placeholder = "Enter Answer" required>
                     </div>
 
-                    <div class = "form-group">
+                    <div class = "mb-3">
                         <label for = "sec-q-two">Security Question Two:</label>
                         <select class = "form-control" id = "sec-q-two">
                             <option value = "city-of-birth">What city were your born in?</option>
@@ -170,16 +174,17 @@
                         </select>
                     </div>
 
-                    <div class = "form-group">
+                    <div class = "mb-3">
                         <label for = "sec-a-two">Security Answer Two</label>
-                        <input type = "text" class = "form-control" id = "sec-a-two" placeholder = "Enter Answer">
+                        <input type = "text" class = "form-control" id = "sec-a-two" placeholder = "Enter Answer" required>
                     </div>
-                    <div class = "form-group">
-                        <button type = "submit" class = "btn btn-success">Login</button>
-                        <p><a href = "../web-files/forogt-password.php">Forgot your password?</a></p>
+                    <div class = "mb-3">
+                        <button type = "submit" class = "btn btn-success">Sign Up</button>
                     </div>
             </div>
         </div>
         
     </body>
+
+    <script src = "passwordcheck.js"></script>
 </html>
