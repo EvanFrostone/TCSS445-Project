@@ -44,7 +44,7 @@
         <div class = "container">
             <div class = "jumbotron">
                 <h2 class= display>Forgot your password?</h2>
-                    <form class = "needs-validation">
+                    <form class = "needs-validation" action = "resetPassword.php" method = "POST">
                         <div class = "mb-3">   
                             <label for = "email">Enter your email address:</label>
                             <input type = "email" class = "form-control" id = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
