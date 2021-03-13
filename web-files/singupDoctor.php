@@ -84,34 +84,7 @@
                         <input type = "password" class = "form-control" name  = "passcon" id = "password-confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,} placeholder ="Please re-enter your Password..." required>
                         <div class = "form-text">Your passwords must match.</div>
                     </div>
-
-                    <div class = "mb-3">
-                        <label for = "sec-q-one">Security Question One:</label>
-                        <select class = "form-control" id = "sec-q-one">
-                            <option value = "mother-maiden">What is your mother's maiden name?</option>
-                            <option value = "second-grade">What school did you go to for second grade?</option>
-                            <option value = "first-car-color">What color was your first car?</option>
-                        </select>
-                    </div>
-
-                    <div class = "mb-3">
-                        <label for = "sec-a-one">Security Answer One</label>
-                        <input type = "text" class = "form-control" id = "sec-a-one" placeholder = "Enter Answer" required>
-                    </div>
-
-                    <div class = "mb-3">
-                        <label for = "sec-q-two">Security Question Two:</label>
-                        <select class = "form-control" id = "sec-q-two">
-                            <option value = "city-of-birth">What city were your born in?</option>
-                            <option value = "make-first-car">What was the make of your first car? (What brand?)</option>
-                            <option value = "father-birth-year">What year was your father born?</option>
-                        </select>
-                    </div>
-
-                    <div class = "mb-3">
-                        <label for = "sec-a-two">Security Answer Two</label>
-                        <input type = "text" class = "form-control" id = "sec-a-two" placeholder = "Enter Answer" required>
-                    </div>
+                    
                     <div class = "mb-3">
                         <button type = "submit" class = "btn btn-success">Sign Up</button>
                     </div>

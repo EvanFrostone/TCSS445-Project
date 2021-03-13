@@ -46,9 +46,14 @@
                 <h2 class= display>Forgot your password?</h2>
                     <form class = "needs-validation">
                         <div class = "mb-3">   
-                            <label for = "email">Enter your email address:</label>
-                            <input type = "email" class = "form-control" id = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            <label for = "password">Enter your new password:</label>
+                            <input type = "password" class = "form-control" id = "pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                             <div class = "form-text">Enter the email you made an account with.</div>
+                        </div>
+
+                        <div class = "mb-3">
+                            <label for = "conpassword">Confirm your password:</label>
+                            <input type = "password" class = "form-control" id = "passcon"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder = "Confirm your password...">
                         </div>
 
                         <div class = "mb-3">
