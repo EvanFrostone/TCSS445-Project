@@ -26,18 +26,19 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="employee.php">Employee</a>
+                        <a class="nav-link" href="employee.php">Testing Locations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="department.php">Department</a>
+                        <a class="nav-link" href="makeAppointment.php">Make Appointment</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="project.php">Project</a>
+                        <a class="nav-link" href="makeAppointment.php">View Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.php">COVID-19 Information</a>
                     </li>
                 </ul>
-                <form action = "../web-files/login.php"class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Login</button>
-                </form>
+
             </div>
         </nav>
     </body>

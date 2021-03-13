@@ -37,35 +37,24 @@
                     </li>
                 </ul>
                 <form action = "../web-files/login.php"class="form-inline my-2 my-lg-0">
-                    <div class = "form-group">
-                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Login</button>
-                    </div>
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Login</button>
                 </form>
             </div>
         </nav>
 
-        <div class = "container">
-            <div class = "jumbotron">
-                <h2 class = "display">Login to your Testing Account</h2>
-                <form method = "GET" action = "post">
-                    <div class = "form-group">
-                        <label for "emailaddress">Email Address</label>
-                        <input type = "email" class = "form-control" id = "emailaddress" placeholder="Enter you Email">
-                    </div>
 
-                    <div class = "form-group">
-                        <label for "password">Password</label>
-                        <input type = "password" class = "form-control" id = "password" placeholder = "Enter your Password">
-                    </div>
-
-                    <div class = "form-group">
-                        <button type = "submit" class = "btn btn-success">Login</button>
-                    </div>
-                </form>
-                <p><a href = "../web-files/forgotPassword.php">Forgot your password?</a></p>
-                <p><a href = "../web-files/signupLanding.php">Don't have an account? Click here to make one.</a></p>
-            </div>
+        <div class = "jumbotron">
+            <div class = "row">
+                <div class = "col">                                                 
+                    <form action = "../web-files/signupPatient.php">                                                
+                        <button class = "btn btn-primary btn-lg">Patient Signup</button>
+                    </form>
+                </div>
+                <div class = "col">
+                    <form action = "../web-files/singupDoctor.php">
+                        <button class = "btn btn-primary btn-lg">Doctor Signup</button> 
+                    </form>
+                </div>
+            </div>  
         </div>
-        
     </body>
-</html>

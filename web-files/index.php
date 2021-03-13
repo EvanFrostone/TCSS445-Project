@@ -3,10 +3,13 @@
     <head>
         <meta charset = "UTF-8">
         <meta name ="viewport"content="width=device-width,initial-scale=1.0">
-        <link rel = "stylesheet" href = "https://bootswatch.com/4/sandstone/bootstrap.min.css">
+        <!--<link rel = "stylesheet" href = "https://bootswatch.com/4/sandstone/bootstrap.min.css">-->
+        <link rel = "stylesheet" href = "../resources/bootstrap.min.css">
+        <script src = "../resources/popper.min.js"></script>
+        <script src = "../resources/jquery-3.6.0.min.js"></script>
         <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
+        
         <title>Pierce County COVID-19 Testing</title> 
 
     </head>
@@ -29,15 +32,16 @@
                         <a class="nav-link" href="employee.php">Testing Locations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="department.php">Department</a>
+                        <a class="nav-link" href="makeAppointment.php">Make Appointment</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="project.php">Project</a>
+                        <a class="nav-link" href="makeAppointment.php">View Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.php">COVID-19 Information</a>
                     </li>
                 </ul>
-                <form action = "../web-files/login.php"class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Login</button>
-                </form>
+
             </div>
         </nav>
         <div class = "container-fluid">
