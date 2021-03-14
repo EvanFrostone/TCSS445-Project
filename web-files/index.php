@@ -81,7 +81,12 @@
 
                 <div class = "col">
                     <div class = "jumbotron">
-                    
+                        <h2 class= "display">If you're looking to make an appointment...</h2>
+                        <p>Make sure to call ahead to testing locations to find specifics on procedures and times.</p>
+                        <p>We cannot show the specifics on pricing, though all Pierce County COVID-19 testing sites will be offer 
+                        completely free testing.</p>
+                        <p>If you are a doctor looking to add your name to the clinic for test results <a href = "signupDoctor.php">click here!</a></p>
+                        <p>If you are looking for test result <a href = "testResults.php">click here!</a></pno sir >
                     </div>
                 </div>
             </div>
