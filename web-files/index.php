@@ -1,14 +1,12 @@
+
 <!DOCTYPE html>
 <html lang = "en">
     <head>
         <meta charset = "UTF-8">
         <meta name ="viewport"content="width=device-width,initial-scale=1.0">
-        <!--<link rel = "stylesheet" href = "https://bootswatch.com/4/sandstone/bootstrap.min.css">-->
-        <link rel = "stylesheet" href = "../resources/bootstrap.min.css">
-        <script src = "../resources/popper.min.js"></script>
-        <script src = "../resources/jquery-3.6.0.min.js"></script>
+        <link rel = "stylesheet" href = "https://bootswatch.com/4/sandstone/bootstrap.min.css">
         <!-- JavaScript Bundle with Popper -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         
         <title>Pierce County COVID-19 Testing</title> 
 
@@ -29,16 +27,16 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="employee.php">Testing Locations</a>
+                        <a class="nav-link" href="testingLocations.php">Testing Locations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="makeAppointment.php">Make Appointment</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="makeAppointment.php">View Appointments</a>
+                        <a class="nav-link" href="viewAppointment.php">View Appointments</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="project.php">COVID-19 Information</a>
+                        <a class="nav-link" href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html">COVID-19 Information</a>
                     </li>
                 </ul>
 
@@ -73,6 +71,35 @@
                             <div class="carousel-item">
                                 <img src="../images/testustestback.png" class="d-block w-100" alt="...">
                             </div>
+
+                            <div class="carousel-item">
+                                <img src="../images/first.png" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../images/healthcare.png" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../images/abuelito.png" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../images/swabnose.png" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../images/swabmob.png" class="d-block w-100" alt="...">
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <img src="../images/testingRespecting.png" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../images/testivus.png" class="d-block w-100" alt="...">
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -85,8 +112,8 @@
                         <p>Make sure to call ahead to testing locations to find specifics on procedures and times.</p>
                         <p>We cannot show the specifics on pricing, though all Pierce County COVID-19 testing sites will be offer 
                         completely free testing.</p>
-                        <p>If you are a doctor looking to add your name to the clinic for test results <a href = "signupDoctor.php">click here!</a></p>
-                        <p>If you are looking for test result <a href = "testResults.php">click here!</a></pno sir >
+                        <p>If you are looking for test result <a href = "viewAppointments.php">click here!</a></p>
+                        <p>All pictures come courtesy of the official Pierce County COVID-19 testing website which we encourage you to visit <a href = "https://www.tpchd.org/healthy-people/diseases/covid-19/testing-information">here!</a></p>
                     </div>
                 </div>
             </div>

@@ -6,12 +6,7 @@
     if (mysqli_connect_errno())
     {
         die(mysqli_connect_error());
-    }
-    $sql = "insert into Patients (PatientFirstName, PatientLastName, PatientAddress, PatientCity, PatientState, PatientZip, PatientPhoneNumber, PatientEmail) 
-    values ('$_GET[firstname]', '$_GET[lastname]', '$_GET[streetaddress]', '$_GET[city]', '$_GET[state]', '$_GET[zipcode]', '$_GET[phonenumber]', '$_GET[emailaddress]')";
-    mysqli_query($connection, $sql); 
-    mysqli_close($connection);
-?> 
+    }?>
 <!DOCTYPE html>
 <html lang = "en">
     <head>
@@ -27,34 +22,34 @@
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="index.php">Pierce County Covid Testing</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <a class="navbar-brand" href="index.php">Pierce County Covid Testing</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="collapse navbar-collapse" id="navbarColor02">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="testingLocations.php">Testing Locations</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="makeAppointment.php">Make Appointment</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="viewAppointment.php">View Appointments</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html">COVID-19 Information</a>
-                            </li>
-                        </ul>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testingLocations.php">Testing Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="makeAppointment.php">Make Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="viewAppointment.php">View Appointments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html">COVID-19 Information</a>
+                        </li>
+                    </ul>
 
-                    </div>
-        </nav>
+                </div>
+            </nav>
 
         <div class = "container">
             <div class = "jumbotron">
@@ -129,7 +124,7 @@
                         <button class = "btn btn-success" type = "submit">Create Appointment</button>
                         
                     </div>
-                    <input style = "visibility:hidden; height = 0px; padding = 0px;" type = "text" name = "email" value = "<?php echo $_GET['emailaddress']?>"></input>
+                    <input style = "visibility:hidden; height = 0px; padding = 0px;" type = "text" name = "email" value = "<?php echo $_GET['email']?>"></input>
                     <input style = "visibility:hidden; height = 0px; padding = 0px;" type = "text" name = "cid" value = "<?php echo $_GET['clinic']?>"></input>
                 </form>
             </div>
