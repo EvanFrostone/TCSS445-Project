@@ -15,14 +15,16 @@
 
 -- Table Clinics: Stores data about Clinics
 Create Table Clinics (
-    ClinicID            int             			Not Null    	Primary Key  AUTO_INCREMENT,
+    ClinicID            int             			Not Null    	Primary Key ,
     ClinicName          varchar(100)   				Not Null,
     ClinicAddress       varchar(100)    			Not Null,
     ClinicCity          varchar(100) 	Default ('Tacoma')   	Not Null,
-    ClinicZip           varchar(5)            			Not Null,
+    ClinicZip           int             			Not Null
+        Check (regexp_like(ClinicZip, '^\d{5}(-\d{4})?$')),
     ClinicAdultOnly     char(1)         Default ('Y')		Not Null,
     ClinicDriveInTest   char(1)         Default ('N')		Not Null,
-    ClinicPhoneNumber   varchar(12)     			Null,
+    ClinicPhoneNumber   varchar(12)     			Null
+        Check (regexp_like(ClinicPhoneNumber, '^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$')),
     TestingDay		int					Not Null,
     TestingStartTime    int					Not Null,
     TestingEndTime      int					Not Null
@@ -30,26 +32,30 @@ Create Table Clinics (
 
 -- Table Patients: Stores data about Patients
 Create Table Patients (
-    PatientID             int             			Not Null        Primary Key AUTO_INCREMENT,
+    PatientID             int             			Not Null        Primary Key,
     PatientFirstName      varchar(100)    			Not Null,
     PatientLastName       varchar(100)    			Not Null,
     PatientAddress        varchar(100)    			Null,
     PatientCity           varchar(100)  Default ('Tacoma')  	Null,
     PatientState          varchar(100)	Default ('WA')  	Null,
-    PatientZip            int             			Null,
-    PatientPhoneNumber    Varchar(12)     			Null ,
+    PatientZip            int             			Null
+        Check (regexp_like(PatientZip, '^\d{5}(-\d{4})?$')),
+    PatientPhoneNumber    Varchar(12)     			Null 
+        Check (regexp_like(PatientPhoneNumber, '^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$')),
     PatientEmail          varchar(100)    			Null
-
+        Check (regexp_like(PatientEmail, '^[^@]+@[^@]+\.[^@]+$'))
 );
 
 -- Table Doctors: Stores data about Doctors
 Create Table Doctors (
-    DoctorID            int             			Not Null            Primary Key AUTO_INCREMENT,
+    DoctorID            int             			Not Null            Primary Key,
     ClinicID            int             			Not Null,
     DoctorFirstName     varchar(100)    			Not Null,
     DoctorLastName      varchar(100)    			Not Null,
-    DoctorPhoneNumber   varchar(12)     			Null ,
-    DoctorEmail         varchar(100)    			Not Null,
+    DoctorPhoneNumber   varchar(12)     			Null 
+        Check (regexp_like(DoctorPhoneNumber, '^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$')),
+    DoctorEmail         varchar(100)    			Not Null
+        Check (regexp_like(DoctorEmail, '^[^@]+@[^@]+\.[^@]+$')),
     Salary		int					Null,
 
     Constraint DoctorsClinicID_FK Foreign Key (ClinicID) References Clinics(ClinicID)
@@ -57,7 +63,7 @@ Create Table Doctors (
 
 -- Table Appointments: Stores data about Appointments
 Create Table Appointments(
-    AppointmentID       int         				Not Null        Primary Key AUTO_INCREMENT,
+    AppointmentID       int         				Not Null        Primary Key,
     ClinicID            int         				Not Null,
     PatientID           int         				Not Null,
     AppointmentDate     date        				Not Null,
