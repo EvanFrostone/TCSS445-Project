@@ -8,7 +8,7 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         
-        <title>Pierce County COVID-19 Testing</title> 
+        <title>GoToAppointment</title> 
 
     </head>
 
@@ -46,7 +46,7 @@
             <div class = "row">
                 <div class = "col">
                     <div class = "jumbotron">
-                        <h1>Welcome to the Pierce County COVID-19 Testing Page.</h1>
+                        <h1>Welcome to the GoToAppointment Page.</h1>
                         <p class = "lead">COVID-19 is testing us. Test it back.</p>
                         <p>Over the course of the past year, the COVID-19 pandemic has caused a siginifcant amount of damage 
                         to our community here in Pierce County.</p>
@@ -110,10 +110,10 @@
                     <div class = "jumbotron">
                         <h2 class= "display">If you're looking to make an appointment...</h2>
                         <p>Make sure to call ahead to testing locations to find specifics on procedures and times.</p>
-                        <p>We cannot show the specifics on pricing, though all Pierce County COVID-19 testing sites will be offer 
+                        <p>We cannot show the specifics on pricing, though all GoToAppointment sites will be offer 
                         completely free testing.</p>
                         <p>If you are looking for test result <a href = "viewAppointments.php">click here!</a></p>
-                        <p>All pictures come courtesy of the official Pierce County COVID-19 testing website which we encourage you to visit <a href = "https://www.tpchd.org/healthy-people/diseases/covid-19/testing-information">here!</a></p>
+                        <p>All pictures come courtesy of the official Pierce County COVID-19 Testing website which we encourage you to visit <a href = "https://www.tpchd.org/healthy-people/diseases/covid-19/testing-information">here!</a></p>
                     </div>
                 </div>
             </div>
